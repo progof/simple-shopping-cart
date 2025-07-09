@@ -14,7 +14,3 @@ export const shared = {
     producerActive: {},
     productActive: {}, 
 }
-
-const msg = "Test string"
-
-console.log(msg.substring())
