@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* The shop */
+.shop-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  width: 100vw;
+  border: 1px solid black;
+}
+
+.shop-label {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  gap: 5px;
+  font-style: bold;
+  margin-left: 15px;
+  border-bottom: 1px solid black;
+}
+
+.shop-label .cart-label> h2 {
+font-size: 18px;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  padding: 15px;
+}
+
+.item-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(243, 244, 247);
+  border: 1px solid black;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.item-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.item-names {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image {
+  max-width: 128px;
+  object-fit: cover;
+}
+
+.item-description {
+  display: flex;
+}
+
+/* .product-qty {
+    border: none;
+} */
+
+.add-to-cart {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.box-cart {
+  border: 1px solid rgb(245, 11, 11);
+}
+
+.seperator {
+  display: flex;
+  border-right: 1px solid black;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="number"] {
+  background-color: rgb(243, 244, 247);
+  padding: 10px;
+  border-right: 1px solid black;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(243, 244, 247);
+  padding: 10px;
+  font-weight: bold;
+  /* width: 50px; */
+  /* border: 1px solid black; */
+  /* border-right: 1px solid black; */
+  width: 30%;
+}
+
+.px-05 {
+  padding: 0 0.5px 0 0;
+  size: 30px;
+}
+
+.add-cart-btn, .delete-item-btn {
+  background-color: rgb(243, 244, 247);
+  padding: 10px;
+  border: none;
+}
+
+/* The cart */
+.cart-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50vw;
+  border: 1px solid black;
+}
+
+.cart-box {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  /* overflow-y: scroll; */
+  /* height: 100vh; */
+
+}
+
+.cart-label {
+  display: flex;
+  align-items: center;
+   margin: 15px;
+  gap: 5px;
+  /* padding: 15px;  */
+  font-style: bold;
+  margin-right: 15px;
+  justify-content: end;
+  border-bottom: 1px solid black;
+}
+
+
+.cart-label > h2 {
+  font-size: 18px;
+}
+
+.checkbox-producer {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  gap: 5px;
+}
+
+.producer-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 244, 247);
+  border: 1px solid black;
+  margin: 15px;
+  padding: 8px;
+  gap: 15px;
+  max-height: auto;
+  overflow-y: scroll;
+}
+
+.producer-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.product-cart {
+  display: flex;
+  gap: 20px;
+  /* width: 100%; */
+  align-items: center;
+  padding: 5px;
+}
+
+.product-qty {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+#qty-dec, #qty-inc {
+  font-size: 14px;
+  font-weight: 700;
+
+}
+.product-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 5px;
+}
+
+.product-field {
+  display: flex;
+  align-items: stretch;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+.product-id {
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.order-total {
+  border: 1px solid black;
+}
+
+.grand-total,
+.order-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 244, 247);
+  /* border: 1px solid black; */
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  height: 20px;
+}
+
+.checkbox-producer > span {
+  size: 10px;
+}
+
+.delete-item-btn {
+  background-color: rgb(240, 208, 208);
+  padding: 2.5px;
+  background: none;
+  margin-right: 5px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+  .items-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
